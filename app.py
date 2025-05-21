@@ -3,7 +3,7 @@ import pandas as pd
 import random
 
 # Tytuł aplikacji
-st.title("Dowiedz się jakie poglądy ma dzisiaj Rafal*")
+st.title("Dowiedz się jakie poglądy ma dzisiaj Rafał*")
 st.write("*poglądy mogą być zmyślone, aplikacja ma charakter satyryczny")
 # Wyświetlenie obrazu JPEG pod tytułem
 try:
