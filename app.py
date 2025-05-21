@@ -3,7 +3,8 @@ import pandas as pd
 import random
 
 # Tytuł aplikacji
-st.title("Dowiedz się jakie poglądy ma dzisiaj Rafal")
+st.title("Dowiedz się jakie poglądy ma dzisiaj Rafal*")
+st.write("*poglądy mogą być zmyślone, aplikacja ma charakter satyryczny")
 # Wyświetlenie obrazu JPEG pod tytułem
 try:
     st.image("obraz.jpeg", caption="Rafau",width=300)  # Zmień 'obraz.jpeg' na nazwę swojego pliku
@@ -26,7 +27,7 @@ def losuj_poglad():
         return f"Błąd: {str(e)}"
 
 # Przycisk do losowania
-if st.button("zapytaj o pogląd"):
+if st.button("Zapytaj o dzisiejszy pogląd"):
     wynik = losuj_poglad()
-    st.write("Pogląd na dzis:")
+    st.write("Dzisiejszy pogląd:")
     st.header(wynik)
